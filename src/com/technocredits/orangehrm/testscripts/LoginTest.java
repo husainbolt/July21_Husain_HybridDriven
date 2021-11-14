@@ -2,6 +2,7 @@ package com.technocredits.orangehrm.testscripts;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.technocredits.orangehrm.base.PredefinedActions;
@@ -18,7 +19,8 @@ public class LoginTest {
 		PredefinedActions.start();
 
 	}
-
+	
+	@Test
 	public void validateLoginWithoutPwd() {
 		
 		LoginPage loginPage = new LoginPage();
