@@ -113,7 +113,7 @@ public class PIM_AddEmployeeTest extends TestBase {
 
 	@DataProvider(name = "EmployeeData")
 	public Object[][] getEmployeeData() throws IOException {
-		return ExcelOperations.getData("./testdata/EmployeeList1.xlsx", "Data");
+		return ExcelOperations.getData("./testdata/EmployeeList.xlsx", "Data");
 	}
 
 	@AfterMethod

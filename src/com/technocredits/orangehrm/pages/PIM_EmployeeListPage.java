@@ -67,29 +67,29 @@ public class PIM_EmployeeListPage extends PredefinedActions {
 		for (int index = 1; index <= totalRows; index++) {
 			Employee employee = new Employee();
 			employee.setEmpID(
-					driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[2]"))
-							.getText());
+					//driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[2]"))
+							getElement("XPATH", "//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[2]", false).getText());
 			employee.setName(
-					driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[3]"))
-							.getText());
+					//driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[3]"))
+					getElement("XPATH", "//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[3]", false).getText());
 			employee.setJobTitle(
-					driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[4]"))
-							.getText());
+					//driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[4]"))
+					getElement("XPATH", "//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[4]", false).getText());
 			employee.setEmpStatus(
-					driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[5]"))
-							.getText());
+					//driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[5]"))
+					getElement("XPATH", "//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[5]", false).getText());
 			employee.setSubUnit(
-					driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[6]"))
-							.getText());
+					//driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[6]"))
+					getElement("XPATH", "//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[6]", false).getText());
 			employee.setCostCenter(
-					driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[7]"))
-							.getText());
+					//driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[7]"))
+					getElement("XPATH", "//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[7]", false).getText());
 			employee.setLocation(
-					driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[8]"))
-							.getText());
+					//driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[8]"))
+					getElement("XPATH", "//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[8]", false).getText());
 			employee.setSupervisor(
-					driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[9]"))
-							.getText());
+					//driver.findElement(By.xpath("//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[9]"))
+					getElement("XPATH", "//table[@id='employeeListTable']/tbody/tr['" + index + "']/td[9]", false).getText());
 			empList.add(employee);
 		}
 
